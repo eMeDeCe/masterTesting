@@ -1,4 +1,4 @@
-name: Ci workflow
+name: Ci Cypress workflow
 
 on: pull_request
 
@@ -12,6 +12,5 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-      - name: Tests
-        run: npm test
-
+      - name: Tests e2e
+        run: npm run test:e2e:ci
