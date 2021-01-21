@@ -1,4 +1,3 @@
-import { literals } from 'core/i18n';
 describe('Login specs', () => {
     it('visit the login page', () => {
       cy.visit('/');
@@ -35,4 +34,4 @@ describe('Login specs', () => {
         'Usuario y/o password no válidos'
       );
     });
-});
+}); 
